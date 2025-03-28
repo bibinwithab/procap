@@ -23,7 +23,7 @@ const Navbar = () => {
               className="flex items-center"
             >
               <Building2 className="h-8 w-8 text-blue-600" />
-              <span className="ml-2 text-xl font-bold text-gray-800">Prosperity Capital</span>
+              <span className="ml-2 text-l font-bold text-gray-800">Procap Investment and Trading</span>
             </motion.div>
           </div>
 

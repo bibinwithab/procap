@@ -1,9 +1,12 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { TrendingUp, Shield, Users, BarChart } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+import { TrendingUp, Shield, Users, BarChart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Home - Procap";
+  }, []);
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -12,7 +15,7 @@ const Home = () => {
           <img
             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80"
             alt="Office building"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-30"
           />
         </div>
         <motion.div
@@ -47,7 +50,8 @@ const Home = () => {
               Why Choose Us
             </h2>
             <p className="text-xl text-gray-600">
-              We combine expertise with innovation to deliver exceptional results
+              We combine expertise with innovation to deliver exceptional
+              results
             </p>
           </div>
 
@@ -55,23 +59,25 @@ const Home = () => {
             {[
               {
                 icon: <TrendingUp className="h-8 w-8" />,
-                title: 'Strategic Growth',
-                description: 'Data-driven strategies for sustainable growth',
+                title: "Strategic Growth",
+                description: "Data-driven strategies for sustainable growth",
               },
               {
                 icon: <Shield className="h-8 w-8" />,
-                title: 'Secure Investment',
-                description: 'Your investments are protected by robust security measures',
+                title: "Secure Investment",
+                description:
+                  "Your investments are protected by robust security measures",
               },
               {
                 icon: <Users className="h-8 w-8" />,
-                title: 'Expert Team',
-                description: 'Seasoned professionals with proven track records',
+                title: "Expert Team",
+                description: "Seasoned professionals with proven track records",
               },
               {
                 icon: <BarChart className="h-8 w-8" />,
-                title: 'Performance Tracking',
-                description: 'Real-time monitoring of your investment performance',
+                title: "Performance Tracking",
+                description:
+                  "Real-time monitoring of your investment performance",
               },
             ].map((feature, index) => (
               <motion.div

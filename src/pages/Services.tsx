@@ -1,39 +1,55 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Briefcase, PieChart, LineChart, Building, Users, Coins } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+import {
+  Briefcase,
+  PieChart,
+  LineChart,
+  Building,
+  Users,
+  Coins,
+} from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
+  useEffect(() => {
+    document.title = "Services - Procap";
+  }, []);
   const services = [
     {
       icon: <Briefcase className="h-8 w-8" />,
-      title: 'Investment Management',
-      description: 'Comprehensive portfolio management tailored to your financial goals and risk tolerance.',
+      title: "Investment Management",
+      description:
+        "Comprehensive portfolio management tailored to your financial goals and risk tolerance.",
     },
     {
       icon: <PieChart className="h-8 w-8" />,
-      title: 'Asset Allocation',
-      description: 'Strategic distribution of investments across various asset classes to optimize returns.',
+      title: "Asset Allocation",
+      description:
+        "Strategic distribution of investments across various asset classes to optimize returns.",
     },
     {
       icon: <LineChart className="h-8 w-8" />,
-      title: 'Financial Planning',
-      description: 'Detailed financial planning services to help you achieve your long-term objectives.',
+      title: "Financial Planning",
+      description:
+        "Detailed financial planning services to help you achieve your long-term objectives.",
     },
     {
       icon: <Building className="h-8 w-8" />,
-      title: 'Corporate Advisory',
-      description: 'Expert guidance on mergers, acquisitions, and corporate restructuring.',
+      title: "Corporate Advisory",
+      description:
+        "Expert guidance on mergers, acquisitions, and corporate restructuring.",
     },
     {
       icon: <Users className="h-8 w-8" />,
-      title: 'Wealth Management',
-      description: 'Personalized wealth management solutions for high-net-worth individuals.',
+      title: "Wealth Management",
+      description:
+        "Personalized wealth management solutions for high-net-worth individuals.",
     },
     {
       icon: <Coins className="h-8 w-8" />,
-      title: 'Risk Management',
-      description: 'Comprehensive risk assessment and management strategies to protect your investments.',
+      title: "Risk Management",
+      description:
+        "Comprehensive risk assessment and management strategies to protect your investments.",
     },
   ];
 
@@ -48,7 +64,8 @@ const Services = () => {
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Comprehensive investment solutions designed to help you achieve your financial goals
+            Comprehensive investment solutions designed to help you achieve your
+            financial goals
           </p>
         </motion.div>
       </section>
@@ -87,14 +104,14 @@ const Services = () => {
             <p className="text-xl text-gray-600 mb-8">
               Let's discuss how we can help you achieve your financial goals
             </p>
-            <Link to={'/contact'}>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors"
-            >
-              Schedule a Consultation
-            </motion.button>
+            <Link to={"/contact"}>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors"
+              >
+                Schedule a Consultation
+              </motion.button>
             </Link>
           </motion.div>
         </div>
