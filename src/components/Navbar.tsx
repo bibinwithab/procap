@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Menu, X, Building2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const navItems = [
-    { path: '/', label: 'Home' },
     { path: '/about', label: 'About Us' },
     { path: '/services', label: 'Our Services' },
     { path: '/contact', label: 'Contact Us' },
@@ -20,7 +20,8 @@ const Navbar = () => {
           <div className="flex items-center">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="flex items-center"
+              className="flex items-center cursor-pointer"
+              onClick={() => navigate('/')}
             >
               <Building2 className="h-8 w-8 text-blue-600" />
               <span className="ml-2 text-l font-bold text-gray-800">Procap Investment and Trading</span>
