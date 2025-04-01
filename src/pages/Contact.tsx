@@ -112,7 +112,7 @@ const Contact = () => {
                   placeholder="Your Name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="pl-10 w-full rounded-lg border-gray-200 shadow-sm focus:border-blue-500 focus:ring-blue-500 h-12 transition-all duration-200"
+                  className="p-10 pl-10 w-full rounded-lg border-gray-200 shadow-sm focus:border-blue-500 focus:ring-blue-500 h-12 transition-all duration-200"
                   required
                 />
               </div>
@@ -127,7 +127,7 @@ const Contact = () => {
                   placeholder="Email Address"
                   value={formData.email}
                   onChange={handleChange}
-                  className="pl-10 w-full rounded-lg border-gray-200 shadow-sm focus:border-blue-500 focus:ring-blue-500 h-12 transition-all duration-200"
+                  className="p-10 pl-10 w-full rounded-lg border-gray-200 shadow-sm focus:border-blue-500 focus:ring-blue-500 h-12 transition-all duration-200"
                   required
                 />
               </div>
@@ -142,10 +142,10 @@ const Contact = () => {
                   placeholder="Phone Number"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="pl-10 w-full rounded-lg border-gray-200 shadow-sm focus:border-blue-500 focus:ring-blue-500 h-12 transition-all duration-200"
+                  className="p-10 pl-10 w-full rounded-lg border-gray-200 shadow-sm focus:border-blue-500 focus:ring-blue-500 h-12 transition-all duration-200"
                 />
               </div>
-              <div className="relative">
+              <div className="pb-6 relative">
                 <MessageSquare
                   className="absolute left-3 top-3 text-blue-400"
                   size={18}
@@ -164,7 +164,7 @@ const Contact = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 font-medium text-lg"
+                className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white  py-4 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 font-medium text-lg"
               >
                 Send Message
               </motion.button>
