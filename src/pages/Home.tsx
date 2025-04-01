@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { TrendingUp, Shield, Users, BarChart } from "lucide-react";
+import { TrendingUp, Shield, Users, GraduationCap } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -74,10 +74,9 @@ const Home = () => {
                 description: "Seasoned professionals with proven track records",
               },
               {
-                icon: <BarChart className="h-8 w-8" />,
-                title: "Performance Tracking",
-                description:
-                  "Real-time monitoring of your investment performance",
+                icon: <GraduationCap className="h-8 w-8" />,
+                title: "Trading Education",
+                description: "Mentoring traders and achieving consistency",
               },
             ].map((feature, index) => (
               <motion.div

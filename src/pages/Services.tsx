@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import {
-  Briefcase,
-  PieChart,
-  LineChart,
-  Building,
-  Users,
-  Coins,
+  Landmark,
+  DollarSign,
+  TrendingUp,
+  BarChart3,
+  Banknote,
+  GraduationCap,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -16,40 +16,40 @@ const Services = () => {
   }, []);
   const services = [
     {
-      icon: <Briefcase className="h-8 w-8" />,
-      title: "Investment Management",
+      icon: <Landmark  className="h-8 w-8" />,
+      title: "Indian Stock Market Trading",
       description:
-        "Comprehensive portfolio management tailored to your financial goals and risk tolerance.",
+        "Advanced trading strategies across NSE and BSE exchanges, generating consistent returns through technical and fundamental analysis.",
     },
     {
-      icon: <PieChart className="h-8 w-8" />,
-      title: "Asset Allocation",
+      icon: <DollarSign className="h-8 w-8" />,
+      title: "Forex Market Trading",
       description:
-        "Strategic distribution of investments across various asset classes to optimize returns.",
+        "Disciplined currency trading focusing on major pairs and emerging markets with proprietary algorithms and strict risk management. ",
     },
     {
-      icon: <LineChart className="h-8 w-8" />,
-      title: "Financial Planning",
+      icon: <TrendingUp className="h-8 w-8" />,
+      title: "E-mini NQ (Nasdaq) Futures Trading",
       description:
-        "Detailed financial planning services to help you achieve your long-term objectives.",
+        "Specialized strategies capitalizing on tech market volatility through precise timing and sector analysis.",
     },
     {
-      icon: <Building className="h-8 w-8" />,
-      title: "Corporate Advisory",
+      icon: <BarChart3 className="h-8 w-8" />,
+      title: "E-mini S&P 500 Futures Trading",
       description:
-        "Expert guidance on mergers, acquisitions, and corporate restructuring.",
+        "Tailored systems for the broader U.S. market combining trend following, mean reversion, and multi-timeframe analysis.",
     },
     {
-      icon: <Users className="h-8 w-8" />,
-      title: "Wealth Management",
+      icon: <Banknote className="h-8 w-8" />,
+      title: "Proprietary Fund Management ",
       description:
-        "Personalized wealth management solutions for high-net-worth individuals.",
+        "Trading exclusively with our own capital, ensuring perfect alignment with performance and enabling innovative strategy implementation",
     },
     {
-      icon: <Coins className="h-8 w-8" />,
-      title: "Risk Management",
+      icon: <GraduationCap className="h-8 w-8" />,
+      title: "Mentorship Program",
       description:
-        "Comprehensive risk assessment and management strategies to protect your investments.",
+        "Personalized guidance, real-time market insights, and trade breakdowns to refine strategies and achieve consistency in live market conditions.",
     },
   ];
 
@@ -64,8 +64,8 @@ const Services = () => {
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Comprehensive investment solutions designed to help you achieve your
-            financial goals
+            Comprehensive investment solu ons designed to help you achieve your financial goals with proper 
+            risk management.
           </p>
         </motion.div>
       </section>

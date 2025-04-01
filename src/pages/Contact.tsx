@@ -23,7 +23,7 @@ const Contact = () => {
     document.title = "Contact Us - Procap";
   }, []);
 
-  const onSubmit = async (e) => {
+  const onSubmit = async (e: {target:{name: string, value: string}}) => {
     e.preventDefault();
     const formData = new FormData(e.target);
 
@@ -59,7 +59,7 @@ const Contact = () => {
     }
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { name: string; value: string; }; }) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,

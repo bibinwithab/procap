@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Award, Target, Clock, Globe, ShieldCheck  } from "lucide-react";
+import { desc } from "framer-motion/client";
 
 const About = () => {
   useEffect(() => {
@@ -74,14 +75,16 @@ const About = () => {
               {
                 name: "Saran Raj",
                 role: "CEO & Managing Director",
+                desc: "5+ years of trading experience in Indian markets",
                 image:
-                  "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                  "../ceo.jpg",
               },
               {
                 name: "Bibin Jebason J",
                 role: "Chief Operating Officer",
+                desc: "4+ years of trading experience in US and Forex markets",
                 image:
-                  "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                  "../coo.jpg",
               },
             ].map((member, index) => (
               <motion.div
@@ -98,6 +101,7 @@ const About = () => {
                 />
                 <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
                 <p className="text-gray-600">{member.role}</p>
+                <p className="text-gray-700">{member.desc}</p>
               </motion.div>
             ))}
           </div>
