@@ -77,14 +77,14 @@ const About = () => {
                 role: "CEO & Managing Director",
                 desc: "5+ years of trading experience in Indian markets",
                 image:
-                  "src/assets/ceo.jpg",
+                  "ceo.jpg",
               },
               {
                 name: "Bibin Jebason J",
                 role: "Chief Operating Officer",
                 desc: "4+ years of trading experience in US and Forex markets",
                 image:
-                  "src/assets/coo.jpg",
+                  "coo.jpg",
               },
             ].map((member, index) => (
               <motion.div

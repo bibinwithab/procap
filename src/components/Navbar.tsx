@@ -24,7 +24,7 @@ const Navbar = () => {
               onClick={() => navigate('/')}
             >
               {/* <Building2 className="h-8 w-8 text-blue-600" /> */}
-              <img src="src/assets/procap1.png" alt="" className='h-10 w-10' />
+              <img src="procap1.png" alt="" className='h-10 w-10' />
               <span className="ml-2 text-l font-bold text-gray-800">Procap Investment and Trading</span>
             </motion.div>
           </div>
