@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Award, Target, Clock } from "lucide-react";
+import { Award, Target, Clock, Globe, ShieldCheck  } from "lucide-react";
 
 const About = () => {
   useEffect(() => {
@@ -18,8 +18,7 @@ const About = () => {
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
           <p className="text-xl">
-            With over two decades of experience in investment management, we've
-            built our reputation on trust, expertise, and consistent results.
+            With more than 5 years of experience in the Industry, Our team does investment in various assets both domestic and international.
           </p>
         </motion.div>
       </section>
@@ -31,21 +30,21 @@ const About = () => {
             {[
               {
                 icon: <Award className="h-12 w-12" />,
-                title: "Excellence",
+                title: "Market Expertise",
                 description:
-                  "We strive for excellence in everything we do, from investment strategies to client service.",
+                  "Elite professionals with proven track records across multiple asset classes, delivering precision execution and adaptive stratergy implementation.",
               },
               {
-                icon: <Target className="h-12 w-12" />,
-                title: "Precision",
+                icon: <Globe className="h-12 w-12" />,
+                title: "Global Reach",
                 description:
-                  "Our approach combines careful analysis with strategic execution to achieve optimal results.",
+                  "Strategic diversification across domestic and international markets, optimizing opportunity capture white minimizing correlation risks.",
               },
               {
-                icon: <Clock className="h-12 w-12" />,
-                title: "Commitment",
+                icon: <ShieldCheck  className="h-12 w-12" />,
+                title: "Risk Discipline",
                 description:
-                  "We're committed to our clients' success, providing dedicated support every step of the way.",
+                  "Propritetary risk management framework ensuring capital preservation, with systematic position sizing and quantitative drawdown controls.",
               },
             ].map((value, index) => (
               <motion.div
@@ -73,14 +72,14 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
               {
-                name: "Sarah Johnson",
-                role: "CEO & Founder",
+                name: "Saran Raj",
+                role: "CEO & Managing Director",
                 image:
                   "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
               },
               {
-                name: "Michael Chen",
-                role: "Chief Investment Officer",
+                name: "Bibin Jebason J",
+                role: "Chief Operating Officer",
                 image:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
               },
