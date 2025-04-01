@@ -177,17 +177,21 @@ const Contact = () => {
               {
                 icon: <Phone className="h-8 w-8 text-blue-600" />,
                 title: "Phone",
-                info: "+1 (555) 123-4567",
+                info: "+91 9972348498, +91 9741515609",
               },
               {
                 icon: <Mail className="h-8 w-8 text-blue-600" />,
                 title: "Email",
-                info: "contact@prosperitycapital.com",
+                info: "procapinvestment@gmail.com",
               },
               {
                 icon: <MapPin className="h-8 w-8 text-blue-600" />,
                 title: "Address",
-                info: "123 Financial District, New York, NY 10004",
+                info: (
+    <>
+      102, 3<sup>rd</sup> Cross, 2<sup>nd</sup> Block, Vishwapriya Nagar, Begur, Bangalore - 560068
+    </>
+  ),
               },
             ].map((item, index) => (
               <motion.div
