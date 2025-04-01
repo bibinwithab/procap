@@ -64,7 +64,7 @@ const Services = () => {
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Comprehensive investment solu ons designed to help you achieve your financial goals with proper 
+            Comprehensive investment solutions designed to help you achieve your financial goals with proper 
             risk management.
           </p>
         </motion.div>
