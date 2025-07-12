@@ -70,7 +70,7 @@ const About = () => {
       <section className="py-20 bg-gray-50 text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-16">Our Leadership Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-12">
             {[
               {
                 name: "Saran Raj",
@@ -79,13 +79,7 @@ const About = () => {
                 image:
                   "ceo.jpg",
               },
-              {
-                name: "Bibin Jebason J",
-                role: "Chief Operating Officer",
-                desc: "4+ years of trading experience in US and Forex markets",
-                image:
-                  "coo.jpg",
-              },
+              
             ].map((member, index) => (
               <motion.div
                 key={index}
